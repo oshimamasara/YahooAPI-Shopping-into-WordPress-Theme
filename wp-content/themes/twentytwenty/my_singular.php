@@ -12,9 +12,8 @@
 get_header(1);
 ?>
 
-<main id="site-content" role="main">
 
-		<h1 style="font-size: 3.6rem;font-weight: 800;line-height: 1.138888889;text-align:center;padding-bottom: 30px"><?php the_title(); ?></h1>
+<h1 style="font-size: 3.6rem;font-weight: 800;line-height: 1.138888889;text-align:center;padding-bottom: 30px"><?php the_title(); ?></h1>
 
 <div class="container">
 
@@ -61,13 +60,19 @@ get_header(1);
 
 <!-- jump Yahoo shop popup function -->
 <!-- The Modal -->
+<style>
+.modal-dialog {
+    margin: 20vh auto 0px auto}
+</style>
 <div class="modal" id="myModal">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-sm">
     <div id='hideMe'>
       <div class="modal-content">
         <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title p-3 mb-2 bg-danger text-white">当店のYahooショップに移動中...</h4>
+        <div class="modal-header  bg-danger ">
+          <div style="text-align:left">
+          <h4 class="modal-title p-3 mb-2 text-white ">当店のYahooショップに移動中...</h4>
+          </div>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <!-- Modal body -->
@@ -83,7 +88,6 @@ get_header(1);
   </div>
 </div>
 <!-- end jump Yahoo shop popup function  -->
-</main><!-- #site-content -->
 
 <?php get_template_part( 'template-parts/footer-menus-widgets' ); ?>
 
